@@ -89,7 +89,7 @@ class MusicController extends Controller
     public function destroy($id)
     {
         $music = Music::find($id);
-        if (!music)
+        if (!$music)
             return response()->json([
                 'message' => 'Música não encontrada!', 
                 'data' => null

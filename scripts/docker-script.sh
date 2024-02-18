@@ -3,5 +3,5 @@
  -e MARIADB_USER=gfrehse \
  -e MARIADB_DATABASE=laravel \
  -e MARIADB_PASSWORD=12345 \
- -p 3310:3310 \
+ -p 3306:3306 \
  -d mariadb:10.10

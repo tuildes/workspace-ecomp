@@ -19,7 +19,7 @@ sudo apt-get install -y php7.4-mysql;
 sudo apt install php7.4-curl;
 
 sudo apt update -y;
-sudo apt-get install mysql-server;
-sudo systemctl start mysql.service;
+# sudo apt-get install mysql-server;
+# sudo systemctl start mysql.service;
 
 docker start back;

@@ -45,7 +45,7 @@ class MusicController extends Controller
     public function show($id)
     {
         $music = Music::find($id);
-        if (!music)
+        if (!$music)
             return response()->json([
                 'message' => 'Música não encontrada!', 
                 'data' => null
@@ -64,10 +64,10 @@ class MusicController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(MusicRequest $request, $id)
     {
         $music = Music::find($id);
-        if (!music)
+        if (!$music)
             return response()->json([
                 'message' => 'Música não encontrada!', 
                 'data' => null

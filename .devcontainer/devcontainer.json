@@ -1,5 +1,5 @@
-// {
-//    "name": "PHP Codespace",
-//    "image": "thecodingmachine/php"
-// }
-{"image":"mcr.microsoft.com/devcontainers/universal:2"}
+{
+    "name": "PHP 7.4",
+    "image": "mcr.microsoft.com/vscode/devcontainers/php:0-7.4"
+  }
+  

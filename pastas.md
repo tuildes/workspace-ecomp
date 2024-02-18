@@ -63,3 +63,7 @@ README.md -> por favor atualizar para o seu uso
 - Routes
 - .env
 - Readme.md
+
+## OUTRAS INFOS
+
+/usr/bin/php7.4 "$(which composer)" install

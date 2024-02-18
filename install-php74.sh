@@ -7,6 +7,8 @@
 ### INSTALING COMPOSER
 # curl -sS https://getcomposer.org/installer | php
 # php composer.phar update
+sudo apt-get update
+sudo apt-get install apache2 libapache2-mod-wsgi
 sudo apt update -y;
 sudo a2dismod php8.1 -y;
 sudo a2dismod mpm_prefork -y;

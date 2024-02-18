@@ -20,6 +20,23 @@ use Illuminate\Support\Facades\Route;
 Route::post('login', 'API\AuthController@login');
 Route::post('signup', 'API\AuthController@signup');
 
+// Rotas de música
+// Route::post('musics', 'API\MusicController@store');
+// Route::get('musics', 'API\MusicController@index');
+// Route::get('musics/{music}', 'API\MusicController@show');
+// Route::put('musics/{music}', 'API\MusicController@update');
+// Route::delete('musics/{music}', 'API\MusicController@destroy');
+
+// /* Rotas de música de INDEX e SHOW */
+// Route::apiResource('musics', 'API\MusicController')->only(['show', 'index']);
+// /* Rotas de música menos as de INDEX e SHOW */
+// Route::apiResource('musics', 'API\MusicController')->except(['show', 'index']);
+
+/*
+    Rotas de música
+*/
+Route::apiResource('musics', 'API\MusicController');
+
 
 /* 
     Rotas de autenticação.

@@ -66,4 +66,6 @@ README.md -> por favor atualizar para o seu uso
 
 ## OUTRAS INFOS
 
-/usr/bin/php7.4 "$(which composer)" install
+/usr/bin/php7.4 --ini;
+/usr/bin/php7.4 "$(which composer)" update;
+/usr/bin/php7.4 "$(which composer)" install;

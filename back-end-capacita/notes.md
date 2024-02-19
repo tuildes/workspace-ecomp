@@ -46,6 +46,8 @@ store - cria
 update - atualiza algo criado
 destroy - deleta
 
+'date' => date('Y/m/d', strtotime($request->date)),
+
 # Requests ou Validator
 
 php artisan make:request nome_modelRequest
@@ -71,3 +73,4 @@ php artisan key:generate
 php artisan migrate
 php artisan migrate:fresh // zerar
 php artisan route:list
+php artisan session:table

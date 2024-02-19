@@ -74,3 +74,11 @@ php artisan migrate
 php artisan migrate:fresh // zerar
 php artisan route:list
 php artisan session:table
+
+# Imagens e arquivos no BD
+
+Colocar o caminho nao a imagem
+Imagens salvas no storage/app/public
+
+$ php artisan storage:link
+lingar storage e public

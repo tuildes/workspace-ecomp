@@ -42,6 +42,10 @@ Route::apiResource('musics', 'API\MusicController');
 */
 Route::apiResource('contacts', 'API\ContactController');
 
+/*
+    Rotas de filme
+*/
+Route::apiResource('movies', 'API\MovieController');
 
 /* 
     Rotas de autenticação.

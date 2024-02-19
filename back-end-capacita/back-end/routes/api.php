@@ -37,6 +37,11 @@ Route::post('signup', 'API\AuthController@signup');
 */
 Route::apiResource('musics', 'API\MusicController');
 
+/*
+    Rotas de contato
+*/
+Route::apiResource('contact', 'API\ContactController');
+
 
 /* 
     Rotas de autenticação.

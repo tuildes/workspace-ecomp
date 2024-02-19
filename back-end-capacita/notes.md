@@ -70,5 +70,4 @@ https://laravel.com
 php artisan key:generate
 php artisan migrate
 php artisan migrate:fresh // zerar
-php artisan migrate
 php artisan route:list

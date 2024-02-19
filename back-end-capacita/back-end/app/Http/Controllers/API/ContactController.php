@@ -32,7 +32,12 @@ class ContactController extends Controller
      */
     public function store(ContactRequest $request)
     {
-        $contact = Contact::create($request->all());
+        $contact = Contact::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'date' => date('Y/m/d', strtotime($request->date)),
+            'subject' => $request->subject,
+        ]);
         return response()->json([
             'message' => 'Contato criado',
             'data' => $contact
@@ -76,7 +81,12 @@ class ContactController extends Controller
                 'data' => null
             ], 404);
         
-        $contact->update($request->all());
+        $contact->update([
+            'name' => $request->name,
+            'email' => $request->email,
+            'date' => date('Y/m/d', strtotime($request->date)),
+            'subject' => $request->subject,
+        ]);
         return response()->json([
             'message' => 'Contato atualizado',
             'data' => $contact

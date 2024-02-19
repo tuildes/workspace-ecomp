@@ -40,7 +40,7 @@ Route::apiResource('musics', 'API\MusicController');
 /*
     Rotas de contato
 */
-Route::apiResource('contact', 'API\ContactController');
+Route::apiResource('contacts', 'API\ContactController');
 
 
 /* 

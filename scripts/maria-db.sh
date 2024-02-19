@@ -1,3 +1,4 @@
+ docker container remove back;
  docker run --name back \
  -e MARIADB_RANDOM_ROOT_PASSWORD=yes \
  -e MARIADB_USER=gfrehse \

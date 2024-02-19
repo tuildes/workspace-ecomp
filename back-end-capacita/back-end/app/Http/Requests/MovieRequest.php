@@ -24,9 +24,9 @@ class MovieRequest extends FormRequest
     public function rules()
     {
         return [
-            'title' => 'required | string | max:255',
-            'movie_poster' => 'file | mimes:jpeg,jpg,bmp,png| max:2048',
-            'year' => 'required | integer | gt:0',
+            'title' => 'required|string|max:255',
+            'movie_poster' => 'file|mimes:jpeg,jpg,bmp,png|max:2048',
+            'year' => 'required|integer|gt:0',
         ];
     }
 }
